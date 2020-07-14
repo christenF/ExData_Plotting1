@@ -13,7 +13,7 @@ HPC$Time <- dmy_hms(paste(EPC$Date, EPC$Time))
 ## translation: Do = Thu, Fr = Fri, Sa = Sat
 
 png("plot4.png", width = 480, height = 480, units = "px")
-par(mfrow = c(2,2), mar = c(4,4,2,2))
+par(mfrow = c(2,2))
 with(HPC, plot(Time, Global_active_power, type = "l", 
                ylab = "Global Active Power (kilowatts)", xlab = ""))
 with(HPC, plot(Time, Voltage, type = "l", 
